@@ -17,7 +17,7 @@
 body {
 	background: #f9f3e9;
 	color: #594846;
-	font: "Adobe Caslon Pro", Georgia, "Times New Roman", serif;
+	font: 100% "Adobe Caslon Pro", Georgia, "Times New Roman", serif;
 }
 a, a:visited {
   color: #42628F;
@@ -98,42 +98,44 @@ dt {
 .navigation {
   min-height: 25px;
 }
+
+body, .header, .navigation, .footer {
+  	width: 100%;
+}
+.navigation ul li {
+	width: 33.333333%;
+}
+
+/* Immagini fluide */
+img, object {
+	max-width: 100%;
+}
+
 /*Desktop structural css*/
-@media screen and (min-width:481px) {
-	body, .header, .navigation, .footer {
-  		width: 960px;
-	}
+@media screen and (min-width:481px) {	
 	.column {
-  		margin: 10px 10px 0 0;
-	}
-	.navigation ul li {
-		width: 320px;
+  		margin: 10px 1.04166667% 0 0;
 	}
 	#visit {
-		width: 240px;
+		width: 25%;
 		float: left;
 	}
 	#points {
-		width: 240px;
+		width: 25%;
 		float: right;
 	}
 	#main {
-		margin: 10px 260px 0 250px;
+		margin: 10px 27.0833333% 0 26.0416667%;
 	}
 }
 /*Mobile structural css*/
 @media screen and (max-width:480px) {
-	body, .header, .navigation, .footer {
-  		width: 320px;
-	}
+	
 	.column {
   		margin: 10px 0;
   		border-bottom: 1px dashed #7B96BC;
 	}
-	.navigation ul li {
-		width: 106.6667px;
-	}
 	#visit, #points, #main {
-		width: 320px;
+		width: 100%;
 	}
 }
