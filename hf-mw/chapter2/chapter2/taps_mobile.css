@@ -125,6 +125,25 @@ img, object {
   background:#fff;
 }
 
+/* Mobile/lower-resolution devices */
+@media screen and (max-width:480px) {
+  .column {
+    margin: 1em 0;
+    border-bottom: 1px dashed #7b96bc;
+  }
+  #visit, #points, #main {
+    width: 100%;
+  }
+    .taplist li {
+    width:50%;
+  }
+  #map {
+    display:none;
+  }
+  .header {
+    display:none;
+  }
+}
 
 /* Wider viewports/higher resolutions (e.g. desktop)  */
 @media screen and (min-width:481px) {
@@ -146,24 +165,4 @@ img, object {
   	float: right;
     margin: 10px 0 0 0;
   }  
-}
-
-/* Mobile/lower-resolution devices */
-@media screen and (max-width:480px) {
-  .column {
-    margin: 1em 0;
-    border-bottom: 1px dashed #7b96bc;
-  }
-  #visit, #points, #main {
-    width: 100%;
-  }
-    .taplist li {
-    width:50%;
-  }
-  #map {
-    display:none;
-  }
-  .header {
-    display:none;
-  }
 }
