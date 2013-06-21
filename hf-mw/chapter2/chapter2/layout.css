@@ -18,3 +18,7 @@
   	float: right;
     margin: 10px 0 0 0;
   }  
+  .header {
+  background:url('images/taps.jpg') repeat-x;
+  height: 300px;
+  }
